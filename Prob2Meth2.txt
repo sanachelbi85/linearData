@@ -1,0 +1,29 @@
+ALGORITHM PROCEDURE pro
+VAR
+    tab1 : ARRAY_OF INTEGER[100];
+    tab2: ARRAY_OF INTEGER[100];
+tab3:ARRAY_OF INTEGER[200];
+htab: HASH_TABLE<INTEGER,INTEGER>;
+    i:INTEGER:=0;
+j:INTEGER:=0;
+N:INTEGER:=0;
+S:INTEGER:=0;
+ BEGIN
+
+ tab3:=concat(tab1,tab3);
+  FOR i FROM  0 TO tab3.length-1 STEP 1 DO
+   FOR j FROM 0 TO tab3.length-1 STEP 1 DO
+   IF(tab3[i] = tab[j+1]) THEN
+   N:=N+1;
+   END_IF
+   END_FOR
+   htab.insert(tab3[i],N);
+   END_FOR
+
+   FOR i FROM 0 TO htab.length STEP 1 DO
+   IF(htab.get(htab[i])!=1) THEN
+   S:=S+htab[i]*(htab.get(htab[i]);
+   END_IF
+   END_FOR
+
+   END
